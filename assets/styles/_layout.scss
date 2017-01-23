@@ -8,12 +8,13 @@
 
 body,
 html {
-  overflow: hidden;
   width: 100%;
   height: 100%;
+  // Something in WP breaks overflow, so this hack fixes it for now.
+  overflow-y: scroll;
 }
 
-.sg-main {
+.is-main {
   width: 100%;
   height: 100%;
 }
